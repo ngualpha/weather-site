@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App homepage</title>
+        <link rel="stylesheet" href="styles/weatherstyle.css">
+        <link rel="icon" href="../pics/earth.jpg">
+        
+       <style>
+           section{
+               display: flex;
+               flex-direction: row;
+           }
+           td, tr{
+               border:1px solid green;
+           }
+          .earth{
+              width: 300px;
+          }
+          .leftpg,.rightpg{
+              width:48%;
+              height: 100%;
+              padding: 1%;
+          }
+          #des{
+              font-weight: bold;
+              color:blue;
+          }
+          .rightpg li{
+              list-style: none;
+          }
+       </style>
+    </head>
+    <body>
+        {{>header}}
+        <section>
+          <div class="leftpg">
+            <img class="earth" src="../pics/earth.jpg" alt="earth pic">
+           
+          </div>
+          <div class="rightpg">
+            <p id="err"></p>
+           Data: <p id="res"></p>
+           location: <p id="res1"></p>
+          </div>
+           
+        </section>
+        {{>footer}}
+        <script src="../js/app.js"></script>
+    </body>
+</html>
