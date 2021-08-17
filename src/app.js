@@ -65,10 +65,7 @@ app.get('/Weather',(req,res)=>{
             })
         })
     })
-    // res.send({
-    //     Location: req.query.address,
-    //     Weather: 'Partly Cloudy'
-    // })
+    
 })
 app.get('/help/*',(req,res)=>{
     res.render('nohelp',{
