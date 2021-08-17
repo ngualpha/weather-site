@@ -1,10 +1,11 @@
 const express = require('express')
 const path = require('path')
-const app = express()
 const hbs = require('hbs')
 const geocode = require('./utiils/geocode')
 const forecast = require('./utiils/forecast')
 
+const app = express()
+const port = process.env.PORT || 3000
 // define paths for express config
 const publicDirectoryPath = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname, '../templates/views') 
@@ -83,6 +84,6 @@ app.get('*',(req,res)=>{
     })
 })
 // Server is listening to port 3000, callback to print running message can be viewded in console
-app.listen(3000,()=>{
-    console.log('Server is up and running on port 3000')
+app.listen(port,()=>{
+    console.log('Server is up and running on port '+port)
 })
