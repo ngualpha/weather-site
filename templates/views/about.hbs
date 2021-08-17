@@ -4,18 +4,39 @@
         <title>About Me</title>
         <link rel="stylesheet" href="styles/weatherstyle.css">
         <link rel="icon" href="pics/earth.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        <style>
           .alp{
               width:300px;
+          }
+          .fa-whatsapp{
+              width:8px;
+              background-color: green;
+              color: #fff;
+          }
+          section{
+              display: flex;
+              flex-direction: row;
           }
        </style>
     </head>
     <body>
         {{>header}}
         <section>
+           <div class="mypic">
+              <img class="alp"src="pics/ngu.jpg" alt="">
+              <p>About Author</p>
+           </div>
+           <div class="aboutme">
+            <p>This weather application was developed by Ngu Alpha, a full stack web developer,
+                who specialises in node.js, and php as backend technology. 
+            </p>
+            <p>
+                You can contact author using email: <a href="ngualph12@gmail.com">ngualph12@gmail.com</a>
+                or by whatsapp via <a href="https://wa.me/+237678921882" target="_blank">+237678921882<i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            </p>
+           </div>
           
-           <img class="alp"src="pics/Ngu_Alpha.jpg" alt="">
-           <p>About Me</p>
         </section>
 {{>footer}}
     </body>
