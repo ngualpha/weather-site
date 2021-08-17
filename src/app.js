@@ -85,5 +85,5 @@ app.get('*',(req,res)=>{
 })
 // Server is listening to port 3000, callback to print running message can be viewded in console
 app.listen(port,()=>{
-    console.log('Server is up and running on port '+port)
+    console.log('Server is up and running on port ' +port)
 })
