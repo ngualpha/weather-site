@@ -1,11 +1,3 @@
-
-// fetch('http://puzzle.mead.io/puzzle').then((response)=>{
-//     response.json().then((data)=>{
-//         console.log(data)
-//     })
-// })
-
-
 const WeatherForm = document.querySelector('form')
 WeatherForm.addEventListener('submit', (e)=>{
 const location = document.querySelector('input').value
