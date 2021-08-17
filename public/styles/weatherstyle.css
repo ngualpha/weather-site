@@ -41,3 +41,15 @@ footer{
     background-color: #56ee;
     color: aliceblue;
 }
+@media (max-width:700px){
+    section{
+        flex-direction: column;
+    }
+    header,footer{
+        width:96vw;
+        padding:1rem 2vw;
+    }
+    header{
+        font-size:20pt;
+    }
+}
