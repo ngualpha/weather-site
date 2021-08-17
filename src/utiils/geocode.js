@@ -1,5 +1,5 @@
 const request = require('request')
-const chalk = require('chalk')
+
 
 const geocode = (address,callback)=>{
     const geocodeUrl = 'http://api.mapbox.com/geocoding/v5/mapbox.places/'+encodeURIComponent(address)+'.json?access_token=pk.eyJ1Ijoibmd1YWxwaGEiLCJhIjoiY2tyNmpxeXNxM2diaDMxbzZ2OWcyMGVmdiJ9.hVp4fyfp4PKdZpwV4qWZgA&limit=1'
