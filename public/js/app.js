@@ -18,9 +18,16 @@ fetch('/weather?address='+encodeURIComponent(location)).then((response)=>{
                         + '<tr><td id="des">Percentage chance of rain:</td><td> '+data.Data.weather.precip+'</td></tr>'
                         + '<tr><td id="des">Wind_Speed:</td><td> '+data.Data.weather.wind_speed+'</td></tr>'
                         + '<tr><td id="des">Cloud Cover:</td><td> '+data.Data.weather.cloudcover+'</td></tr>'
-                        + '<tr><td id="des">Apparent Temperature:</td><td> '+data.Data.weather.feelslike+' degrees celcius</td></tr></table>'
+                        + '<tr><td id="des">Apparent Temperature:</td><td> '+data.Data.weather.feelslike+' degrees celcius</td></tr>'
+                        + '<tr><td id="des">Wind direction:</td><td> '+data.Data.weather.wind_dir+'</td></tr>'//new row
+                        + '<tr><td id="des">Wind degree:</td><td> '+data.Data.weather.wind_degree+'</td></tr>'//new row
+                        + '<tr><td id="des">Visibility:</td><td> '+data.Data.weather.visibility+'</td></tr>'//new row
+                        + '<tr><td id="des">Local time:</td><td> '+data.Data.loctime+'</td></tr></table>'//new row
                         + '<img id="wico" src='+data.Data.weather.weather_icons[0]+' alt="weather_icon">'
-         res1.textContent= data.location
+         res1.innerHTML= data.location 
+
+                           + '<br>' + 'latitude: '+data.Data.latitude
+                           +',<br> Longitude: '+ data.Data.longitude
         }
     })
 })

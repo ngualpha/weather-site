@@ -93,6 +93,7 @@ td, tr{
     }
   form{
       width:85vw;
+      margin: auto;
   }
   section{
     flex-direction:column;

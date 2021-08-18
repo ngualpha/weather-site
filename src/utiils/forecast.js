@@ -14,7 +14,10 @@ const forecast =(latitude,longitude,callback)=>{
            country: body.location.country,
            Region: body.location.region,
            time: body.location.localtime,
-           weather: body.current
+           weather: body.current,
+           latitude,
+           longitude,
+           loctime: body.location.localtime
         }
         
        callback(undefined,data)
