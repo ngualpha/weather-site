@@ -1,6 +1,6 @@
 header{
     font-size: 40pt;
-    font-family: 'Courier New', Courier, monospace,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding:5px 0;
     font-weight: bold;
@@ -11,7 +11,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width:700px;
+    width:100vw;
     margin: 0 auto;
 }
 section{
@@ -41,6 +41,40 @@ footer{
     background-color: #56ee;
     color: aliceblue;
 }
+button{
+    width:auto;
+    background-color: #044;
+    height:3.3rem;
+    color:#fff;
+    margin:3px 0;
+    padding:0 3px;
+}
+input{
+    height:3rem;
+    margin:3px 0;
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+td, tr{
+    border:1px solid green;
+}
+.earth{
+   width: 300px;
+}
+.leftpg,.rightpg{
+   width:48%;
+   height: 100%;
+   padding: 1%;
+}
+#des{
+   font-weight: bold;
+   color:blue;
+}
+.rightpg li{
+   list-style: none;
+}
 @media (max-width:700px){
     section{
         flex-direction: column;
@@ -52,4 +86,21 @@ footer{
     header{
         font-size:20pt;
     }
+    .leftpg,.rightpg{
+        width:94%;
+        margin: 0;
+        justify-content: center;
+    }
+  form{
+      width:85vw;
+  }
+  section{
+    flex-direction:column;
+}
+ .earth{
+         width:70%;
+       }
+       #res{
+           width:100vw;
+       }
 }
