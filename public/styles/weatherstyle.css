@@ -57,8 +57,12 @@ section{
     display: flex;
     flex-direction: row;
 }
+table{
+    border: 1px solid rgb(55, 61, 70);;
+}
 td, tr{
-    border:1px solid green;
+    border-bottom:1px solid rgb(55, 61, 70);
+    background-color:rgb(185, 220, 248);
 }
 .earth{
    width: 300px;
