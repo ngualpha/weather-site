@@ -20,7 +20,7 @@ fetch('/weather?address='+encodeURIComponent(location)).then((response)=>{
                         + '<tr><td id="des">Wind_Speed:</td><td> '+data.Data.weather.wind_speed+' km/h</td></tr>'
                         + '<tr><td id="des">Cloud Cover:</td><td> '+data.Data.weather.cloudcover+'</td></tr>'
                         + '<tr><td id="des">Humidity:</td><td> '+data.Data.weather.humidity+'</td></tr>'
-                        + '<tr><td id="des">Pressure:</td><td> '+data.Data.weather.pressure+' atm</td></tr>'
+                        + '<tr><td id="des">Pressure:</td><td> '+data.Data.weather.pressure+'Pa</td></tr>'
                         + '<tr><td id="des">Apparent Temperature:</td><td> '+data.Data.weather.feelslike+' degrees celcius</td></tr>'
                         + '<tr><td id="des">Wind direction:</td><td> '+data.Data.weather.wind_dir+'</td></tr>'//new row
                         + '<tr><td id="des">Wind degree:</td><td> '+data.Data.weather.wind_degree+'</td></tr>'//new row
